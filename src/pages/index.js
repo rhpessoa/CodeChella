@@ -46,6 +46,17 @@ const Header = styled.div`
       }
     }
   }
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    .LogoHeader {
+      margin-left: 2.5em;
+    }
+    .ListaHeader {
+      li:not(:last-child) {
+        padding-right: 1.8em;
+      }
+    }
+  }
 `;
 export default function Home() {
   return (
