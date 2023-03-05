@@ -27,7 +27,7 @@ const Lista = styled.div`
   }
 `;
 export default function Menu() {
-  const { toggleTheme, theme } = React.useContext(ThemeContext);
+  const { toggleTheme } = React.useContext(ThemeContext);
   const [isOpened, setIsOpened] = React.useState(false);
   function OpenMenu() {
     if (!isOpened) return setIsOpened(true);
