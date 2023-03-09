@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Raleway', sans-serif;
     color: white;
     font-size:16px;
+    background: ${(props) => props.theme.backgroundColor};
   }
 
   .Header{

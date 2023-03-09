@@ -3,7 +3,6 @@ import LogoSVG from "../Logo";
 import SocialMedia from "./SocialMedia";
 
 const FooterContain = styled.div`
-  position: absolute;
   font-weight: 500;
   font-size: 20px;
   line-height: 40px;
@@ -34,7 +33,7 @@ const FooterContain = styled.div`
       }
     }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1440px) {
     height: 11.6em;
     .teste {
       display: flex;
@@ -54,7 +53,7 @@ const FooterContain = styled.div`
 `;
 export default function Footer() {
   return (
-    <FooterContain className="Footer">
+    <FooterContain suppressHydrationWarning className="Footer">
       <div className="teste">
         <div className="InfoFooter">
           <LogoSVG />

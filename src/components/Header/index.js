@@ -44,10 +44,12 @@ const HeaderContain = styled.div`
       }
     }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1440px) {
     flex-direction: row;
+    height: 6.7em;
+    padding: 0;
     .LogoHeader {
-      margin-left: 2.5em;
+      margin-left: 6.7em;
     }
     .ListaHeader {
       li:not(:last-child) {

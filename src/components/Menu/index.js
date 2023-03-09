@@ -7,7 +7,7 @@ import { ThemeContext } from "@/context/ColorThemeContext";
 const Lista = styled.div`
   text-align: center;
   list-style-type: none;
-  top: 15.8%;
+  top: 14.2%;
   right: 0;
   position: absolute;
   width: 11.2em;

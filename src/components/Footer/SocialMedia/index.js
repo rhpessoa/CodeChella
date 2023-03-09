@@ -15,7 +15,7 @@ const SocialMediaContain = styled.div`
 `;
 export default function SocialMedia() {
   return (
-    <SocialMediaContain>
+    <SocialMediaContain suppressHydrationWarning>
       <div className="IconesContain">
         <a href="#">
           <Image alt="Wpp icone" src={WPPIcon} width={32} height={32} />
