@@ -1,7 +1,8 @@
 import styled from "styled-components";
-import LogoSVG from "../Logo";
 import SocialMedia from "./SocialMedia";
-
+import React from "react";
+import { ThemeContext } from "@/context/ColorThemeContext";
+import Image from "next/image";
 const FooterContain = styled.div`
   font-weight: 500;
   font-size: 20px;
@@ -35,7 +36,7 @@ const FooterContain = styled.div`
   }
   @media screen and (min-width: 1440px) {
     height: 11.6em;
-    .teste {
+    .FooterInfoContainer {
       display: flex;
       flex-direction: row;
     }
@@ -52,11 +53,18 @@ const FooterContain = styled.div`
   }
 `;
 export default function Footer() {
+  const { bottomLogoColor } = React.useContext(ThemeContext);
+
   return (
     <FooterContain suppressHydrationWarning className="Footer">
-      <div className="teste">
+      <div className="FooterInfoContainer">
         <div className="InfoFooter">
-          <LogoSVG />
+          <Image
+            alt="Logo codeChella"
+            src={bottomLogoColor}
+            width={234}
+            height={64}
+          />
           <div className="RedesFooter">
             <span>Acesse nossas redes:</span>
             <SocialMedia />

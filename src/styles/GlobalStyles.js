@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
-    color: white;
+    color: ${(props) => props.theme.textColor};
     font-size:16px;
     background: ${(props) => props.theme.backgroundColor};
   }
@@ -17,7 +17,13 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${(props) => props.theme.headerColor};
   }
   .Footer{
-    background-color: ${(props) => props.theme.headerColor};
+    background-color: ${(props) => props.theme.bottomColor};
+  }
+  .EventDate{
+    background-color: ${(props) => props.theme.dateEventColor};
+  }
+  .BottomBanner{
+    background-color: ${(props) => props.theme.bottomColor};
   }
 `;
 

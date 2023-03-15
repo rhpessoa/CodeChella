@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Logo from "../../../public/icons/logoCodeChella.svg";
+import Logo from "../../../public/icons/logoCodeChellaWhite.svg";
 
 export default function LogoSVG() {
   return (
